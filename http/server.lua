@@ -614,7 +614,7 @@ local function process_client(self, s, peer)
         p.peer = peer
         setmetatable(p, request_mt)
 
-        -- If plugin have same name of request, it will override
+        -- If plugin has same name of request, it will override
         for n, f in pairs(self.plugins.request) do
             rawset(getmetatable(p).__index, n, f)
         end

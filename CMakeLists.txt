@@ -15,6 +15,7 @@ include_directories(${TARANTOOL_INCLUDE_DIRS})
 set(CMAKE_C_FLAGS_DEBUG "${CMAKE_C_FLAGS_DEBUG} -Wall -Wextra")
 
 add_subdirectory(http)
+add_subdirectory(plugins)
 
 enable_testing()
 
